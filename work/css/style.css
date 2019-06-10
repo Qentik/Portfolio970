@@ -1,0 +1,103 @@
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #CCC;
+}
+
+.button {
+  text-decoration: none;
+  padding: 10px 50px;
+  font-size: 14px;
+  color: #CCC;
+  background-color: #d91626;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.block-first {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 8fr 1fr;
+      grid-template-columns: 1fr 8fr 1fr;
+  -ms-grid-rows: 1fr 10fr;
+      grid-template-rows: 1fr 10fr;
+      grid-template-areas: ". . ." ". layer .";
+  background: url(/img/wcnsRyRCsFY.jpg) no-repeat;
+  background-size: cover;
+}
+
+.block-first-layer {
+  position: relative;
+  min-height: 700px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: layer;
+  background: #361919;
+  background: rgba(0, 0, 0, 0.34);
+  -webkit-box-shadow: 0px 0px 30px 5px #000000;
+          box-shadow: 0px 0px 30px 5px #000000;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 2fr 1fr 1fr;
+      grid-template-columns: 2fr 2fr 1fr 1fr;
+  -ms-grid-rows: 1fr 6fr 1fr 2fr;
+      grid-template-rows: 1fr 6fr 1fr 2fr;
+      grid-template-areas: "header header . ." "text text . ." "button1 button1 . ." ". . . .";
+}
+
+.block-first-layer-gradient {
+  position: absolute;
+  bottom: 0;
+  height: 200px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(rgba(12, 11, 16, 0.8)), to(#0c0b10));
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(12, 11, 16, 0.8), #0c0b10);
+}
+
+.block-first-layer-text {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: text;
+  text-align: center;
+  padding: 80px 60px 0 60px;
+  color: #CCC;
+}
+
+.block-first-layer-text h2 {
+  font-size: 40px;
+}
+
+.block-first-layer-button {
+  text-align: center;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: button1;
+}
+
+.block-first-layer-header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: header;
+  text-align: center;
+}
+
+.block-first-layer-header-link {
+  display: inline-block;
+  padding: 25px;
+}
+
+.block-first-layer-header-link:hover {
+  background-color: rgba(133, 32, 40, 0.3);
+}
+/*# sourceMappingURL=style.css.map */
