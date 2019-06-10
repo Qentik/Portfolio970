@@ -1,0 +1,61 @@
+*, *:after, *:before
+    box-sizing: border-box  
+body 
+    margin: 0 
+a 
+    text-decoration: none
+    color: #CCC
+.button
+    text-decoration: none
+    padding: 10px 50px
+    font-size: 14px
+    color: #CCC 
+    background-color: rgba(217, 22, 38, 1)
+    display: inline-block
+    font-weight: 600
+
+.block
+    &-first 
+        display: grid
+        grid-template-columns: 1fr 8fr 1fr
+        grid-template-rows: 1fr 10fr
+        grid-template-areas: ". . ." ". layer ."
+        background: url(/img/wcnsRyRCsFY.jpg) no-repeat 
+        background-size: cover
+        &-layer 
+            position: relative
+            min-height: 700px
+            grid-area: layer
+            background: rgb(54, 25, 25)
+            background: rgba(0, 0, 0, .34)
+            box-shadow: 0px 0px 30px 5px #000000
+            display: grid
+            grid-template-columns: 2fr 2fr 1fr 1fr 
+            grid-template-rows: 1fr 6fr 1fr 2fr 
+            grid-template-areas: "header header . ." "text text . ." "button1 button1 . ." ". . . ."
+            &-gradient
+                position: absolute
+                bottom: 0
+                height: 200px
+                width: 100%
+                background: linear-gradient(rgba(0, 0, 0, .0), rgba(12, 11, 16, .8), rgba(12, 11, 16, 1))
+            &-text
+                grid-area: text
+                text-align: center
+                padding: 80px 60px 0 60px
+                color: #CCC
+                h2 
+                    font-size: 40px
+            &-button 
+                text-align: center
+                grid-area: button1
+            &-header
+                grid-area: header
+                text-align: center
+                &-link 
+                    display: inline-block
+                    padding: 25px
+                    &:hover
+                        background-color: rgba(133, 32, 40, .3)
+
+            
